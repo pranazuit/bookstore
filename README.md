@@ -4,5 +4,6 @@
 - รันคำสั่ง yarn และ yarn start
 
 วิธีเริ่มใช้งาน backend
-- build file docker compose ที่อยู่ใน folder backend
+- Build file docker compose ที่อยู่ใน folder backend
+- Restart container backend_service_bookstore
 - backend จะถูกรันอยู่ที่ port 8000
