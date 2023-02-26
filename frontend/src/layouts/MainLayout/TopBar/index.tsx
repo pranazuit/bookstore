@@ -60,6 +60,12 @@ const useStyles = makeStyles((theme: any) => ({
   },
   btnLogin: {
     marginRight: '10px',
+    backgroundColor: '#0655EA !important',
+    color: '#fff',
+  },
+  btnRegister: {
+    backgroundColor: '#B51415 !important',
+    color: '#fff',
   },
   inputBooking: {
     marginBottom: '18px',

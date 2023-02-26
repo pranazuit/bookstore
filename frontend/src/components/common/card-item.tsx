@@ -23,11 +23,9 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom: '16px !important',
     },
     btnBuy: {
-        backgroundColor: '#ff6f00',
         color: '#fff',
     },
     btnAddToCart: {
-        backgroundColor: 'grey',
         color: '#fff',
     },
     boxAmountProduct: {
@@ -375,8 +373,8 @@ const CardItem = (props: any) => {
                 </CardContent>
                 {isAction &&
                     <CardActions className={classes.cardActions}>
-                        <Button variant="contained" className={classes.btnBuy} onClick={()=>onClickBuy()}>ซื้อ</Button>
-                        <Button variant="contained" className={classes.btnAddToCart} onClick={()=>onClickAddToCart()}>เพิ่มลงรถเข็น</Button>
+                        <Button variant="contained" color='primary' className={classes.btnBuy} onClick={()=>onClickBuy()}>ซื้อ</Button>
+                        <Button variant="contained" color='secondary' className={classes.btnAddToCart} onClick={()=>onClickAddToCart()}>เพิ่มลงรถเข็น</Button>
                     </CardActions>
                 }
             </Card>

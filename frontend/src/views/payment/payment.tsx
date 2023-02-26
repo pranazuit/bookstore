@@ -144,7 +144,7 @@ const PaymentPage = () => {
                     </Grid>
                     <Box className={classes.boxPayment}>
                         <Typography className={classes.textTotal}>รวมทั้งสิ้น {Utility.priceFormat(paymentStore.total)} บาท</Typography>
-                        <Button variant='contained' onClick={onClickPayment}>ชำระเงิน</Button>
+                        <Button variant='contained' color='secondary' onClick={onClickPayment}>ชำระเงิน</Button>
                     </Box>
                 </>
             :

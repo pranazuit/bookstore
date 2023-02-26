@@ -93,7 +93,7 @@ const CartPage = () => {
                     </Grid>
                     <Box className={classes.boxPayment}>
                         <Typography className={classes.textTotal}>รวมทั้งสิ้น {Utility.priceFormat(total)} บาท</Typography>
-                        <Button variant='contained' onClick={onClickPayment} disabled={selectProduct.length == 0 ? true: false}>ไปหน้าชำระเงิน</Button>
+                        <Button variant='contained' color='secondary' onClick={onClickPayment} disabled={selectProduct.length == 0 ? true: false}>ไปหน้าชำระเงิน</Button>
                     </Box>
                 </>
             :
