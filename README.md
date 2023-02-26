@@ -1,1 +1,8 @@
 # bookstore
+วิธีเริ่มใช้งาน frontend
+- cd ไปใน folder frontend
+- รันคำสั่ง yarn และ yarn start
+
+วิธีเริ่มใช้งาน backend
+- build file docker compose ที่อยู่ใน folder backend
+- backend จะถูกรันอยู่ที่ port 8000
