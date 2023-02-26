@@ -1,0 +1,1 @@
+[{"model": "backend_bookstore.payment", "pk": 1, "fields": {"user": 2, "record_date": "2023-02-25T18:50:03.311Z", "pay_datetime": "2023-02-25T18:50:13Z", "ref_payment": "chrg_test_5uxcs0z4gf2b0h8io7m", "price": "700.00", "method": "promptpay", "status": 2}}]

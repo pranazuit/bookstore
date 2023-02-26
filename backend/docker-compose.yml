@@ -1,0 +1,41 @@
+version: "3"
+   
+services:
+  db_bookstore:
+    container_name: db_bookstore
+    image: postgres:11
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 4hPJ3qq5l7cNgAdFPBIzVbFdl
+      POSTGRES_USER: admin
+      POSTGRES_DB: bookstore
+    networks:
+      - nw_db_bookstore
+    ports:
+      - "5432:5432"
+
+  service_bookstore:
+    container_name: service_bookstore
+    restart: always
+    build: .
+    networks:
+        - nw_db_bookstore
+    command: >
+      bash -c "
+        find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+        find . -path "*/migrations/*.pyc"  -delete
+        mkdir /logs
+        python manage.py makemigrations backend_bookstore
+        python manage.py migrate 
+        python manage.py loaddata initdata/*.json
+        python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/code
+      - ./media:/media
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db_bookstore
+
+networks:
+  nw_db_bookstore:

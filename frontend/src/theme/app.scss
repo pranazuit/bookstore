@@ -1,0 +1,26 @@
+/* NumberBox */
+div.ns-formitem-right input {
+  text-align: right;
+}
+div.ns-formitem-center input {
+  text-align: center;
+}
+div.ns-formitem-left input {
+  text-align: left;
+}
+
+.grecaptcha-badge{
+  display: none !important;
+}
+.MuiTableCell-root {
+  border: 1px solid rgba(224, 224, 224, 1)
+}
+.MuiTableSortLabel-icon {
+  display: none !important;
+}
+.MuiTableSortLabel-root:hover .MuiTableSortLabel-icon {
+  display: inline-block !important;
+}
+.MuiTable-root tr td:last-child div {
+  justify-content: center;
+}

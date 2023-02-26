@@ -1,0 +1,34 @@
+nbproject/
+migrations/
+*.egg-info
+*.pot
+*.py[co]
+.tox/
+__pycache__
+*.pyc
+env/
+.DS_Store
+node_modules/
+config.py
+.coverage
+htmlcov/
+media/
+CSV/
+*.zip
+.vscode/
+
+####automate ignore###
+log.html
+output.xml
+report.html
+/*.png
+/static/
+.history/
+*.log
+
+# daily_dumpdata_each_person
+daily_data/
+*.rdb
+data.sql
+.scannerwork
+.env

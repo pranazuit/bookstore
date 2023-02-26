@@ -1,0 +1,5 @@
+export const GeneralAction = {
+  SET_MODAL_LOGIN_S: 'SET_MODAL_LOGIN_S',
+  SET_MODAL_REGISTER_S: 'SET_MODAL_REGISTER_S',
+};
+  
